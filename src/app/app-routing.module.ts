@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './components/general/navigation/navigation.component';
+import { BodyComponent } from './components/body/body.component';
 
 const routes: Routes = [
   {
     path: '',
     component: NavigationComponent,
+    // canActivate: [AuthGuard],
     children: [
       {
+        component: BodyComponent,
         path: 'home',
         data: {
           breadcrumb: "menu.enterprise"

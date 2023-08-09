@@ -19,8 +19,9 @@ import { BodyRoutingModule } from './body-routing.module';
 
 @NgModule({
   declarations: [
-    // HomeComponent
+
   ],
+  
   imports: [
     CommonModule,
     BodyRoutingModule,
